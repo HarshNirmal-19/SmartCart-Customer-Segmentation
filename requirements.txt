@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+kneed for the Elbow Method
