@@ -52,46 +52,50 @@ The original dataset contains **2,240 customer records and 22 attributes** descr
 
 Each row represents an individual customer.
 
-### Customer Demographics
+### 👤 Customer Demographics
 
- Feature -- Description 
+| Feature | Description |
+|---|---|
+| `ID` | Unique customer identifier |
+| `Year_Birth` | Year of birth of the customer |
+| `Education` | Highest education level achieved |
+| `Marital_Status` | Marital status of the customer |
+| `Income` | Yearly household income |
+| `Kidhome` | Number of small children in the household |
+| `Teenhome` | Number of teenagers in the household |
+| `Dt_Customer` | Date when the customer enrolled |
 
- `ID` -- Unique customer identifier 
- `Year_Birth` -- Year of birth of the customer 
- `Education` -- Highest education level achieved 
- `Marital_Status` -- Marital status of the customer 
- `Income` -- Yearly household income 
- `Kidhome` -- Number of small children in the household 
- `Teenhome` -- Number of teenagers in the household 
- `Dt_Customer` -- Date when the customer enrolled 
 
-### Purchase Behaviour — Amount Spent
+## 🛒 Purchase Behaviour — Amount Spent
 
- Feature -- Description 
+| Feature | Description |
+|---|---|
+| `MntWines` | Amount spent on wine products |
+| `MntFruits` | Amount spent on fruit products |
+| `MntMeatProducts` | Amount spent on meat products |
+| `MntFishProducts` | Amount spent on fish products |
+| `MntSweetProducts` | Amount spent on sweet products |
+| `MntGoldProds` | Amount spent on gold products |
 
- `MntWines` -- Amount spent on wine products 
- `MntFruits` -- Amount spent on fruit products 
- `MntMeatProducts` -- Amount spent on meat products 
- `MntFishProducts` -- Amount spent on fish products 
- `MntSweetProducts` -- Amount spent on sweet products 
- `MntGoldProds` -- Amount spent on gold products 
 
-### Purchase Behaviour — Frequency
- Feature -- Description 
+## 📊 Purchase Behaviour — Frequency
 
- `NumDealsPurchases` -- Purchases made using discounts 
- `NumWebPurchases` -- Purchases made through the website 
- `NumCatalogPurchases` -- Purchases made through the catalog 
- `NumStorePurchases` -- Purchases made through physical stores 
- `NumWebVisitsMonth` --- Number of website visits per month 
+| Feature | Description |
+|---|---|
+| `NumDealsPurchases` | Number of purchases made using discounts |
+| `NumWebPurchases` | Number of purchases made through the website |
+| `NumCatalogPurchases` | Number of purchases made through the catalog |
+| `NumStorePurchases` | Number of purchases made through physical stores |
+| `NumWebVisitsMonth` | Number of website visits per month |
 
-### Customer Feedback and Activity
 
- Feature -- Description 
+## 📢 Customer Feedback and Activity
 
- `Recency` -- Number of days since the last purchase 
- `Complain` -- Whether the customer complained 
- `Response` -- Customer response to the marketing campaign 
+| Feature | Description |
+|---|---|
+| `Recency` | Number of days since the customer's last purchase |
+| `Complain` | Whether the customer submitted a complaint |
+| `Response` | Customer response to the marketing campaign |
 
 ---
 
@@ -279,31 +283,20 @@ Business Recommendation
 
 ## 📁 Project Structure
 
-SmartCart-Customer-Segmentation/
-│
-├── kmeans_model.pkl
-├── pca.pkl
-├── scaler.pkl
-│
-├── segmentation.py
-├── smartcart_customers.csv
-├── SmartCart_model.ipynb
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
 
-## File Description
-File  --	Description
-SmartCart_model.ipynb --> Complete machine learning workflow including data analysis, preprocessing, feature engineering, PCA, and clustering
-segmentation.py	 --> Streamlit application for customer segment prediction
-smartcart_customers.csv	  --> Customer dataset used for the project
-kmeans_model.pkl -->   Trained KMeans clustering model
-scaler.pkl	-->  Fitted StandardScaler
-pca.pkl	-->   Fitted PCA transformation
-requirements.txt -->	Python dependencies required to run the application
-.gitignore	-->  Files and folders excluded from Git tracking
-README.md	-->  Project documentation
+| File | Description |
+|---|---|
+| `SmartCart_model.ipynb` | Complete machine learning workflow including data analysis, preprocessing, feature engineering, PCA, and customer segmentation |
+| `segmentation.py` | Streamlit application for interactive customer segment prediction |
+| `smartcart_customers.csv` | Customer dataset used for the project |
+| `kmeans_model.pkl` | Trained KMeans clustering model |
+| `scaler.pkl` | Fitted StandardScaler used for feature standardization |
+| `pca.pkl` | Fitted PCA transformation used for dimensionality reduction |
+| `requirements.txt` | Python dependencies required to run the application |
+| `.gitignore` | Files and folders excluded from Git tracking |
+| `README.md` | Project documentation |
+
+
 
 # 🛠️ Technologies Used
 --Programming Language
