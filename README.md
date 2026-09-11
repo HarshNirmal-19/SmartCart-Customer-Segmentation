@@ -1,5 +1,12 @@
 # SmartCart Customer Segmentation
 
+
+# LIVE DEMO : Open SmartCart Customer Segmentation App
+
+ link:  https://smartcart-customer-segmentation-app.streamlit.app/
+
+
+
 ## 📌 Project Overview
 
 SmartCart Customer Segmentation is an unsupervised machine learning project developed to identify meaningful groups of customers based on their demographic characteristics, purchasing behaviour, website activity, and customer engagement.
